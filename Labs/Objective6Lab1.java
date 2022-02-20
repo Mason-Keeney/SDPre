@@ -2,12 +2,12 @@
 
 public class Objective6Lab1 {
   public static void main(String[] args){
-    //Scanner scanner = new Scanner(System.in);
+    //Scanner userMonth = new Scanner(System.in);
     //int month;
     int month = 6;
 
     //System.out.println("What number is the current month?");
-    //month = scanner.nextInt();
+    //month = userMonth.nextInt();
 
     switch (month) {
       case 1:
