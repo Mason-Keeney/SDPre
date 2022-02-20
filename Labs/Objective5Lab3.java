@@ -18,6 +18,7 @@ public class Objective5Lab3 {
       System.out.println("The number is negative");
     }
 
+
 //alternate solution using else comparison
 /*
   if(userNum > 0){
@@ -30,5 +31,6 @@ public class Objective5Lab3 {
     System.out.println("The number is zero");
     }
 */
+  scanner.close();
   }
 }
