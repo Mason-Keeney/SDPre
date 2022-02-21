@@ -26,7 +26,7 @@ public class Objective9Lab5 {
             case 2: answer = findAverage(num1, num2);
             System.out.println("The average of " + num1 + " and " + num2 + " is " + answer);
             break;
-            case 3: answer = findTax(num1, num2);
+            case 3: answer = calcTax(num1, num2);
             System.out.println("The amount in tax to be collected from a purchase of " + num1 + " and " + num2 + " is: " + answer);
             break;
             case 4:
@@ -65,7 +65,7 @@ public class Objective9Lab5 {
     double average = (x + y)/2;
     return average;
   }
-  public static double findTax(double x, double y){
+  public static double calcTax(double x, double y){
     double tax = (x + y) * .0831;
     return tax;
   }
