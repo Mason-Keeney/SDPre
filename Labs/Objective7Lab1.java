@@ -4,7 +4,6 @@ public class Objective7Lab1 {
 
     while(counter > 0) {
       System.out.println(counter);
-
       counter = counter - 1;
     }
   }
