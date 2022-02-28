@@ -22,16 +22,24 @@ public class ParseGame{
     for(int i = 0; i < weaponA.length; i++){
      switch(weaponA[i]){
       case "sword":
+      case "sword.":
         weapon = "Sword";
+        i = 256;
         break;
       case "bow":
+      case "bow.":
         weapon = "Bow";
+        i = 256;
         break;
       case "axe":
+      case "axe.":
         weapon = "Axe";
+        i = 256;
         break;
       case "spear":
+      case "spear.":
         weapon = "Spear";
+        i = 256;
         break;
       default:
      }
