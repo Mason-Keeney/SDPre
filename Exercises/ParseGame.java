@@ -20,15 +20,21 @@ public class ParseGame{
     String weaponIL = weaponI.toLowerCase();
     String weaponA[] = weaponIL.split(" ");
     for(int i = 0; i < weaponA.length; i++){
-      if(weaponA[i].equals("sword")){
+     switch(weaponA[i]){
+      case "sword":
         weapon = "Sword";
-      } else if(weaponA[i].equals("bow")){
+        break;
+      case "bow":
         weapon = "Bow";
-      } else if(weaponA[i].equals("spear")){
-        weapon = "Spear";
-      } else if(weaponA[i].equals("axe")){
+        break;
+      case "axe":
         weapon = "Axe";
-      }
+        break;
+      case "spear":
+        weapon = "Spear";
+        break;
+      default:
+     }
       }
       System.out.println("You have chosen the " + weapon);
     }
