@@ -21,6 +21,12 @@ public class ParseGame{
 
     String weaponI = s.nextLine();
     String weaponA[] = weaponI.replaceAll("[^a-zA-Z0-9 ]", "").toLowerCase().split(" ");
+    /*
+    String weaponIL = weaponI.toLowerCase;
+    String weaponNoPunc = noPunc(weaponIL);
+    String weaponA[] = weaponNoPunc.split(" ");
+    the above method is way simpler though, no for loop needed!
+    */
 
     for(int i = 0; i < weaponA.length; i++){
      switch(weaponA[i]){
