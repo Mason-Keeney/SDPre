@@ -1,10 +1,13 @@
 import java.util.Scanner;
 
 
+
 public class ParseGame{
+
+
   public static void main(String[] args){
-    Scanner s = new Scanner(System.in);
     String weapon = "null";
+    Scanner s = new Scanner(System.in);
 
     System.out.println("Welcome to the parse games!");
     System.out.println("They are pretty short");
@@ -17,27 +20,23 @@ public class ParseGame{
     System.out.println("--------------------");
 
     String weaponI = s.nextLine();
-    String weaponIL = weaponI.toLowerCase();
-    String weaponA[] = weaponIL.split(" ");
+    String weaponA[] = weaponI.replaceAll("[^a-zA-Z0-9 ]", "").toLowerCase().split(" ");
+
     for(int i = 0; i < weaponA.length; i++){
      switch(weaponA[i]){
       case "sword":
-      case "sword.":
         weapon = "Sword";
         i = 256;
         break;
       case "bow":
-      case "bow.":
         weapon = "Bow";
         i = 256;
         break;
       case "axe":
-      case "axe.":
         weapon = "Axe";
         i = 256;
         break;
       case "spear":
-      case "spear.":
         weapon = "Spear";
         i = 256;
         break;
@@ -46,4 +45,47 @@ public class ParseGame{
       }
       System.out.println("You have chosen the " + weapon);
     }
+/*
+    public static String noPunc(String str){
+      for(int i = 0; i < str.length(); i++){
+        switch(str.charAt(i)){
+          case ',':
+            str = str.replace(",", "");
+            break;
+          case '.':
+            str = str.replace(".", "");
+            break;
+          case '!':
+            str = str.replace("!", "");
+            break;
+          case '?':
+            str = str.replace("?", "");
+            break;
+          case '%':
+            str = str.replace("%", "");
+            break;
+          case '&':
+            str = str.replace("&", "");
+            break;
+          case '\"':
+            str = str.replace("\"", "");
+            break;
+          case '\\':
+            str = str.replace("\\", "");
+            break;
+          case '/':
+            str = str.replace("/", "");
+            break;
+          case ';':
+            str = str.replace(";", "");
+            break;
+          case ':':
+            str = str.replace(":", "");
+            break;
+          default:
+        }
+      }
+      return str;
+    }
+    */
   }
